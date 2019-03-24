@@ -2,6 +2,7 @@ import React from 'react';
 
 import Grid from './Grid';
 import './App.css';
+import Buttons from './Buttons';
 
 class App extends React.Component {
   speed = 100;
@@ -78,6 +79,7 @@ class App extends React.Component {
     return (
       <div>
         <h1>Game of Life</h1>
+        <Buttons playButton={this.playButton} pauseButton={this.pauseButton} />
         <Grid
           gridFull={this.state.gridFull}
           rows={this.rows}

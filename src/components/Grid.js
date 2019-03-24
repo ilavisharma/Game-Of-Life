@@ -4,7 +4,7 @@ import Box from './Box';
 
 class Grid extends React.Component {
   render() {
-    const width = this.props.cols * 16 + 1;
+    const width = this.props.cols * 14;
     let rowsArr = [];
 
     let boxClass = '';
